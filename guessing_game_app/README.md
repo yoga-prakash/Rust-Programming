@@ -1,32 +1,30 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
+<h1>Guessing Game</h1>
+<p>Created a simple and basic guessing game that generates a number and compared with user guessed number and shows correct or not.</p>
+<p>Stack: <em>TypeScript, React, Rust and Tauri</em>.</p>
+<p>start using this command - 
+<kbd><code>vp exec tauri dev</code></kbd> in the terminal of your prefered code editor.
+</p>
+<p>Some files or folders might be blocked by defender so some error might occur when building, as in total of 356 only 354 things will be built.</p>
+<p>After building, a new window will open and user can type inside the input field and press guess button to trigger the tauri command - 
+<pre><code class="language-rust">
+#[tauri::command]
+fn guessing(input_params) {
+  ...snippets
 }
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+</code></pre>
+</p>
+<p>This code will check the inputed string and generated random number using -
+<pre><code>
+std::cmp::Ordering; // Enum
+</code></pre> and 
+<pre><code>
+match // keyword
+</code></pre>
+among the enum 
+<pre><code>
+Ordering::Less => {}
+Ordering::Greater => {}
+Ordering::Equal => {}
+</code></pre>
+if any match that particular enum's function code will be run.
+</p>
